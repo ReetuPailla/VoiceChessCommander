@@ -1,0 +1,534 @@
+----- 08/12/25 22:45:25 -----
+Traceback (most recent call last):
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\__init__.py", line 103, in get_pyaudio
+    import pyaudio
+ModuleNotFoundError: No module named 'pyaudio'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 269, in play_as
+    with sr.Microphone() as source:
+         ~~~~~~~~~~~~~^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\__init__.py", line 75, in __init__
+    self.pyaudio_module = self.get_pyaudio()
+                          ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\__init__.py", line 105, in get_pyaudio
+    raise AttributeError("Could not find PyAudio; check installation")
+AttributeError: Could not find PyAudio; check installation
+
+Playing as BLACK:
+	d2d4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq d3 0 1
+-----------------------------
+
+----- 08/12/25 22:46:55 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 08/12/25 22:48:04 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as BLACK:
+	c2c4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq c3 0 1
+-----------------------------
+
+----- 08/12/25 22:48:28 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as BLACK:
+	d2d4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq d3 0 1
+-----------------------------
+
+----- 08/12/25 22:50:27 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 08/12/25 22:52:44 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 08/12/25 22:53:08 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 08/13/25 11:42:37 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as BLACK:
+	d2d4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq d3 0 1
+-----------------------------
+
+----- 08/13/25 11:49:48 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 267, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 08/13/25 11:50:28 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 72, in _playsoundWin
+    winCommand(u'open {}'.format(sound))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 263 for command:
+        open Output.mp3
+    The specified device is not open or is not recognized by MCI.
+
+Playing as BLACK:
+	d2d4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq d3 0 1
+-----------------------------
+
+----- 08/13/25 11:51:36 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 72, in _playsoundWin
+    winCommand(u'open {}'.format(sound))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 263 for command:
+        open Output.mp3
+    The specified device is not open or is not recognized by MCI.
+
+Playing as BLACK:
+	d2d4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq d3 0 1
+-----------------------------
+
+----- 08/13/25 11:54:06 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as BLACK:
+	g1f3
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1
+-----------------------------
+
+----- 08/13/25 12:12:07 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 267, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 08/13/25 12:12:38 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 72, in _playsoundWin
+    winCommand(u'open {}'.format(sound))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 263 for command:
+        open Output.mp3
+    The specified device is not open or is not recognized by MCI.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 08/13/25 12:18:47 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 267, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
+----- 08/13/25 12:19:26 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 72, in _playsoundWin
+    winCommand(u'open {}'.format(sound))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 263 for command:
+        open Output.mp3
+    The specified device is not open or is not recognized by MCI.
+
+Playing as BLACK:
+	d2d4
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+	rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq d3 0 1
+-----------------------------
+
+----- 08/13/25 12:34:57 -----
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 273, in play_as
+    text = r.recognize_google(audio_data)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 262, in recognize_legacy
+    return output_parser.parse(response_text)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 134, in parse
+    actual_result = self.convert_to_result(response_text)
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\speech_recognition\recognizers\google.py", line 183, in convert_to_result
+    raise UnknownValueError()
+speech_recognition.exceptions.UnknownValueError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\git\voice-controlled-chess\code\gui.py", line 280, in play_as
+    playsound("Output.mp3")
+    ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 73, in _playsoundWin
+    winCommand(u'play {}{}'.format(sound, ' wait' if block else ''))
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\S ASHA\AppData\Local\Programs\Python\Python313\Lib\site-packages\playsound.py", line 64, in winCommand
+    raise PlaysoundException(exceptionMessage)
+playsound.PlaysoundException: 
+    Error 259 for command:
+        play Output.mp3 wait
+    The driver cannot recognize the specified command parameter.
+
+Playing as WHITE:
+	
+	rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+-----------------------------
+
